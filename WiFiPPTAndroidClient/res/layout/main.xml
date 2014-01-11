@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/hello"
+    />
+<EditText 
+	android:layout_height="wrap_content" 
+	android:id="@+id/ServeripEditText" 
+	android:layout_width="fill_parent" />
+
+<EditText 
+	android:layout_height="wrap_content" 
+	android:id="@+id/editText1" 
+	android:layout_width="fill_parent" />
+
+<Button android:id="@+id/getip" 
+	android:text="@string/getipbtn" 
+	android:layout_width="104dp" 
+	android:layout_height="wrap_content" />
+
+<Button 
+	android:id="@+id/send" 
+	android:text="@string/sendbtn" 
+	android:layout_width="104dp" 
+	android:layout_height="wrap_content" />
+	
+
+
+<Button android:id="@+id/init" 
+	android:text="@string/initBtn" 
+	android:layout_width="104dp" 
+	android:layout_height="wrap_content" />
+
+<Button android:id="@+id/first" 
+	android:text="@string/firstBtn" 
+	android:layout_width="104dp" 
+	android:layout_height="wrap_content" />
+
+<Button android:id="@+id/last" 
+	android:text="@string/lastBtn" 
+	android:layout_width="104dp" 
+	android:layout_height="wrap_content" />
+
+<Button android:id="@+id/prev" 
+	android:text="@string/prevBtn" 
+	android:layout_width="104dp" 
+	android:layout_height="wrap_content" />
+
+<Button android:id="@+id/next" 
+	android:text="@string/nextBtn" 
+	android:layout_width="104dp" 
+	android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
