@@ -6,13 +6,15 @@ This project is using devices control the PPT slide presentation.
 WiFiPPT 手机WiFi控制PPT播放
 
 一、预期效果
-
+![image](https://github.com/cslilong/WiFiPPT/raw/master/img/ppt.gif "WiFiPPT")
+![image](https://github.com/cslilong/WiFiPPT/raw/master/img/WiFiPPTClient.png "WiFiPPTAndroidClient")
 
 二、C#控制PPT放映
 
 1.既然要实现的程序是遥控幻灯片，这样我们就需要先获得幻灯片应用程序的，在PowerPoint对象模型中，Microsoft.Office.Interop.PowerPoint.Application代表Powerpoint应用程序，这点和Word、Excel和Outlook都是一样的。
 2.获得了幻灯片应用程序对象之后，之后我们就需要获得幻灯片对象，因为我们遥控的是幻灯片，在PowerPoint对象模型中也提供了幻灯片对象，即Microsoft.Office.Interop.PowerPoint.Slide。由于幻灯片又是存在于演示文稿中的，所以我们要想获得幻灯片对象，就需要先获得演示文稿对象，Microsoft.Office.Interop.PowerPoint.Presentation 就是代表演示文稿对象。
 3.获得幻灯片对象之后，我们就可以利用幻灯片对象的Select方法来进行幻灯片的切换,然而在阅读模式的情况下，不能用Select方法来进行翻页，此时需要另一种方式来实现，即调用 Microsoft.Office.Interop.PowerPoint.SlideShowView对象的First，Next,Last,Previous方法来进行幻灯片翻页。
+``` C#
 using System ;
 using System .Collections. Generic;
 using System .Linq;
@@ -153,10 +155,11 @@ namespace WiFiPPT
         }
     }
 }
-
+```
 三、C#的Socket通信
 
 服务端多线程异步程序
+``` C#
 public bool servicesStatus = true;  // 开始停止服务按钮状态
 public Thread myThread;       //声明一个线程实例
 public Socket newsock;        //声明一个Socket 实例
@@ -290,8 +293,9 @@ private void button1_Click( object sender , EventArgs e)
 
     }
 }
-
+```
 客户端android程序
+``` Java
 package hnu.lilong;
 
 import java.io.BufferedWriter;
@@ -467,12 +471,9 @@ public class MySocketClientActivity extends Activity {
           }
     }
 }
-
+```
 项目文件：
-服务端项目文件
-
-android客户端文件
-
-
-参考项目
+服务端项目：WiFiPPT文件夹
+android客户端文件：WiFiPPTAndroidClient文件夹
+参考项目：TCPServer,TCPClient
 
