@@ -478,5 +478,7 @@ public class MySocketClientActivity extends Activity {
 ###项目文件说明：
 服务端项目：WiFiPPT文件夹<br/>
 android客户端文件：WiFiPPTAndroidClient文件夹<br/>
-参考项目：TCPServer,TCPClient<br/>
+服务端可执行文件：WiFiPPT.exe（需要.net framework 2.0）<br/>
+客户端Android的apk文件：WiFiPPTAndroidClient.apk<br/>
+
 
