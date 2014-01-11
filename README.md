@@ -6,9 +6,11 @@ This project is using devices control the PPT slide presentation.
 WiFiPPT 手机WiFi控制PPT播放
 ======================
 ###一、预期效果
-PPT放映效果
-![image](https://github.com/cslilong/WiFiPPT/raw/master/img/ppt.gif "WiFiPPT")
-![image](https://github.com/cslilong/WiFiPPT/raw/master/img/WiFiPPTClient.png "WiFiPPTAndroidClient")
+PPT放映效果<br/>
+
+![image](https://github.com/cslilong/WiFiPPT/raw/master/ppt.gif "WiFiPPT")
+
+![image](https://github.com/cslilong/WiFiPPT/raw/master/WiFiPPTClient.png "WiFiPPTAndroidClient")
 
 ###二、C#控制PPT放映
 
