@@ -1,9 +1,9 @@
 WiFiPPT
 =======
 
-This project is using devices control the PPT slide presentation.
+This project is using Android devices control the PPT slide presentation through WiFi.
 
-WiFiPPT 手机WiFi控制PPT播放
+WiFiPPT 手机通过WiFi遥控PPT播放
 ======================
 做报告讲PPT，有时候讲PPT要跑来跑去指指点点讲解，然后又没有遥控设备,于是做了这样一个手机遥控PPT播放的小玩意。<br/>
 ###一、运行效果展示
@@ -14,7 +14,7 @@ PPT放映效果<br/>
 ![image](https://github.com/cslilong/WiFiPPT/raw/master/WiFiPPTClient.png "WiFiPPTAndroidClient")
 
 ###二、C#控制PPT放映
-参考博文http://learninghard.blog.51cto.com/6146675/1158034 
+参考博文http://learninghard.blog.51cto.com/6146675/1158034 <br/>
 1.既然要实现的程序是遥控幻灯片，这样我们就需要先获得幻灯片应用程序的，在PowerPoint对象模型中，Microsoft.Office.Interop.PowerPoint.Application代表Powerpoint应用程序，这点和Word、Excel和Outlook都是一样的。<br/>
 2.获得了幻灯片应用程序对象之后，之后我们就需要获得幻灯片对象，因为我们遥控的是幻灯片，在PowerPoint对象模型中也提供了幻灯片对象，即Microsoft.Office.Interop.PowerPoint.Slide。由于幻灯片又是存在于演示文稿中的，所以我们要想获得幻灯片对象，就需要先获得演示文稿对象，Microsoft.Office.Interop.PowerPoint.Presentation 就是代表演示文稿对象。<br/>
 3.获得幻灯片对象之后，我们就可以利用幻灯片对象的Select方法来进行幻灯片的切换,然而在阅读模式的情况下，不能用Select方法来进行翻页，此时需要另一种方式来实现，即调用 Microsoft.Office.Interop.PowerPoint.SlideShowView对象的First，Next,Last,Previous方法来进行幻灯片翻页。<br/>
